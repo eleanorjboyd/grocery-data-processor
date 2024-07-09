@@ -1,6 +1,6 @@
 import pytest
 import pandas as pd
-from src.update_table import add_item_to_table, remove_item_from_table, increment_item_quantity, decrement_item_quantity
+from update_table import add_item_to_table, remove_item_from_table, increment_item_quantity, decrement_item_quantity
 
 
 @pytest.fixture

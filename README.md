@@ -21,28 +21,20 @@ Here are the following configurable options:
 ```
 "python.configs": [
         {
-            "name": "config unittest 1",
-            "type": "test",
-            "subtype": [
+            "name": "config unittest 1", // required and must be unique
+            "type": "test", // required
+            "subtype": [ // required
                 "testRun",
                 "testDebug",
                 "testDiscovery"
             ],
-            "args": ["-p", "test*.py"],
-            "env": {"PYTHONPATH": "xyz"},
-            "envFile": "path/to/file",
-            "framework": "pytest",
+            "args": ["-p", "test*.py"], // required, leave array empty if no args needed
+            "env": {"PYTHONPATH": "xyz"}, // optional
+            "envFile": "path/to/file", // optional
+            "framework": "pytest", // required
         },
         {
-            "name": "config pytest 1",
-            "type": "test",
-            "subtype": [
-                "testDiscovery"
-            ],
-            "args": ["-vv"],
-        },
-        {
-            "name": "config pytest 1",
+            "name": "basic config with custom arg",
             "type": "test",
             "subtype": [
                 "testDiscovery"
