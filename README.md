@@ -15,6 +15,51 @@ This project is designed to process grocery data from the `grocery_data.csv` fil
 
 Here are some useful pytest args which might help you approach this:
 
+### Docs on the new config style:
+
+Here are the following configurable options:
+```
+"python.configs": [
+        {
+            "name": "config unittest 1",
+            "type": "test",
+            "subtype": [
+                "testRun",
+                "testDebug",
+                "testDiscovery"
+            ],
+            "args": ["-p", "test*.py"],
+            "env": {"PYTHONPATH": "xyz"},
+            "envFile": "path/to/file",
+            "framework": "pytest",
+        },
+        {
+            "name": "config pytest 1",
+            "type": "test",
+            "subtype": [
+                "testDiscovery"
+            ],
+            "args": ["-vv"],
+        },
+        {
+            "name": "config pytest 1",
+            "type": "test",
+            "subtype": [
+                "testDiscovery"
+            ],
+            "args": ["-vv"],
+        },
+        {
+            "name": "debug config",
+            "type": "terminal",
+            "subtype": [
+                "terminalRun",
+                "terminalDebug"
+            ],
+        }
+    ],
+```
+
 ### Useful pytest Command-Line Arguments
 
 1. **`-s` / `--capture=no`**
