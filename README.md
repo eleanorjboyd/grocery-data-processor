@@ -5,7 +5,7 @@ This project is designed to process grocery data from the `grocery_data.csv` fil
 
 ## Getting started
 
-1. Create a venv using the VS Code "Python: Create Environments" command in the command palette and select to install the required dependencies from `requirements.txt`
+1. Create a venv using the VS Code **Python: Create Environment** command found in the Command Palette (`Ctrl/Cmd + P`) and select to install the required dependencies from `requirements.txt`
 
 ## Additional Information
 
