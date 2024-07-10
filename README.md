@@ -15,7 +15,6 @@ Here are some useful pytest args which might help you approach this:
 
 Here are the following configurable options:
 ```
-
 "python.configs": [
         {
          // Testing config example 
