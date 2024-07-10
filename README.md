@@ -5,11 +5,7 @@ This project is designed to process grocery data from the `grocery_data.csv` fil
 
 ## Getting started
 
-1. Create a venv using the VS Code "Python: Create Environments" command in the command palette
-2. Install the required dependencies by running the following command:
-   ```
-   pip install -r requirements.txt
-   ```
+1. Create a venv using the VS Code "Python: Create Environments" command in the command palette and select to install the required dependencies from `requirements.txt`
 
 ## Additional Information
 
@@ -19,8 +15,10 @@ Here are some useful pytest args which might help you approach this:
 
 Here are the following configurable options:
 ```
+
 "python.configs": [
         {
+         // Testing config example 
             "name": "config unittest 1", // required and must be unique
             "type": "test", // required
             "subtype": [ // required
@@ -28,23 +26,16 @@ Here are the following configurable options:
                 "testDebug",
                 "testDiscovery"
             ],
-            "args": ["-p", "test*.py"], // required, leave array empty if no args needed
+            "args": ["-p", "test*.py", "-vv"], // required, leave array empty if no args needed
             "env": {"PYTHONPATH": "xyz"}, // optional
             "envFile": "path/to/file", // optional
-            "framework": "pytest", // required
+            "framework": "pytest", // optional
         },
+         // Debug config example
         {
-            "name": "basic config with custom arg",
-            "type": "test",
-            "subtype": [
-                "testDiscovery"
-            ],
-            "args": ["-vv"],
-        },
-        {
-            "name": "debug config",
-            "type": "terminal",
-            "subtype": [
+            "name": "debug config", // required and must be unique
+            "type": "terminal", // required
+            "subtype": [ // required
                 "terminalRun",
                 "terminalDebug"
             ],
