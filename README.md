@@ -18,7 +18,7 @@ Here are the following configurable options:
 "python.configs": [
         {
          // Testing config example 
-            "name": "config unittest 1", // required and must be unique
+            "name": "basic config 1", // required and must be unique
             "type": "test", // required
             "subtype": [ // required
                 "testRun",
