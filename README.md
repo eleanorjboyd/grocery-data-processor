@@ -8,8 +8,7 @@ This project is designed to process grocery data from the `grocery_data.csv` fil
 1. Create a venv using the VS Code **Python: Create Environment** command found in the Command Palette (`Ctrl/Cmd + P`) and select to install the required dependencies from `requirements.txt`
 
 ## Additional Information
-
-Here are some useful pytest args which might help you approach this:
+Below are a couple of examples on the format of the new config style we are testing.
 
 ### Docs on the new config style:
 
